@@ -5,10 +5,7 @@ Version 0.9: Studious Gargoyle
 This is the list of CVEs used to run our analysis for the research paper. 
 The list is in the file `cvelist-studious-gargoyle.json` in this directory.
 
-This list results in our UPxi SSAs correctly identifying just over 61% of the true positive CVEs.
-
-* Flawmapper code version: (git SHA hash)
-* Date: (date)
+This list results in our UPxi SSAs correctly identifying just over 62% of the true positive CVEs.
 
 # Description
 
