@@ -14,8 +14,32 @@ This list results in our UPxi SSAs correctly identifying just over 61% of the tr
 
 The list of CVEs is drawn from the NVD CVE list maintained at `https://github.com/CVEProject/cvelistV5`
 
-The structure of the list
+The contents of this list are the complete set of CVEs selected to admit to the front of our processing pipeline.
+
+This pipeline is a two-stage process. First, we run the FlawMapper tool to attempt to map from the CVE description 
+and repository information back to the actual _culprit commit_ that introduced the flaw.  The FlawMapper is a very
+strict filter that passes a small fraction of the larger test set. We are investigating ways to harvest more of the
+resolved mappings. The second step is to take the resolved list and apply our AI/LLM Agents to the identified commits.
+The Agents do not have any prior information about whether that commit contains a flaw or vulnerability. Since the
+commit is a True Positive, they (and others like them) should identify the specific flaw (not just the general high
+level fact that there may be a security flaw in that commit).
+
+All CVEs are published from August 1 2025 to April 25, 2026.
+
+These projects contain 7 common source code languages and 16 other assorted languages.
+
+The CVEs cover more than 20 CWE types.
+
+# Results
+
+N = 896
+Number of CVEs Resolved by FlawMapper = 134
+Number of additional likely but discarded resolutions = 115
+
+Source Security Agents subselection = 103 (out of 134)
+Source Security Agents identification count = 64
+Source Security Agents success rate = 62% (64/103)
 
 # Background Material
 
-For our quick prototype, we initially used a candidate list of CVEs in: `v0.0-candidates.json`
+TBD.
