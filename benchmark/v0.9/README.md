@@ -21,8 +21,6 @@ The Agents do not have any prior information about whether that commit contains 
 commit is a True Positive, they (and others like them) should identify the specific flaw (not just the general high
 level fact that there may be a security flaw in that commit).
 
-All CVEs are published from August 1 2025 to April 25, 2026.
-
 These projects contain 7 common source code languages and 16 other assorted languages.
 
 The CVEs cover more than 20 CWE types.
