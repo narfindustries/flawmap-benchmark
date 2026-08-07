@@ -27,6 +27,7 @@ The CVEs cover more than 20 CWE types.
 
 # Results
 
+```
 N = 896
 Number of CVEs Resolved by FlawMapper = 134
 Number of additional likely but discarded resolutions = 115
@@ -34,6 +35,7 @@ Number of additional likely but discarded resolutions = 115
 Source Security Agents subselection = 103 (out of 134)
 Source Security Agents identification count = 64
 Source Security Agents success rate = 62% (64/103)
+```
 
 # Background Material
 
